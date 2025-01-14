@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emulating LiDAR from Video Footage for OpenSki AI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Emulating LiDAR from Video Footage for OpenSki AI</h1>
+    <p>
+        In this post, we’ll explore how <strong>LiDAR-like data</strong> can be generated from regular photos or video footage for projects like OpenSki AI. The goal is to create a system that helps skiers and instructors analyze performance using affordable and accessible tools. Even without physical LiDAR sensors, we can achieve similar results using cutting-edge AI and computer vision techniques. Here’s how it works:
+    </p>
+
+    <h2>What is LiDAR?</h2>
+    <p>
+        LiDAR (Light Detection and Ranging) is a technology that uses lasers to measure distances and build a 3D map of the environment. It’s widely used in autonomous vehicles, mapping, and robotics.
+    </p>
+    <p>
+        For OpenSki AI, real LiDAR might be expensive or unnecessary. Instead, we can emulate LiDAR outputs—like depth maps and 3D point clouds—using video footage and AI models.
+    </p>
+
+    <h2>How Can We Emulate LiDAR?</h2>
+    <p>Here are the key methods to generate LiDAR-like data from standard cameras:</p>
+    
+    <h3>1. Depth Estimation</h3>
+    <p>
+        AI models can predict the depth of objects from a single image or video frame. Tools like <strong>MiDaS</strong> or <strong>Dense Prediction Transformer (DPT)</strong> are open-source and provide detailed depth maps.
+    </p>
+
+    <h3>2. Stereo Vision</h3>
+    <p>
+        By capturing video with two cameras (like human eyes), we can calculate depth from the differences between the two views. Open-source tools like <strong>OpenCV</strong> can handle stereo depth mapping.
+    </p>
+
+    <h3>3. Structure from Motion (SfM)</h3>
+    <p>
+        SfM analyzes how objects move across multiple frames to reconstruct a 3D scene. Tools like <strong>COLMAP</strong> or <strong>Meshroom</strong> are designed for this purpose.
+    </p>
+
+    <h3>4. Neural Radiance Fields (NeRF)</h3>
+    <p>
+        NeRF is a cutting-edge AI technique that creates 3D environments from 2D images or video. Tools like <strong>Instant-NGP</strong> (by NVIDIA) and <strong>nerfstudio</strong> allow for fast and detailed 3D reconstructions.
+    </p>
+
+    <h2>What Tools Can We Use?</h2>
+    <p>All of the tools below are free and open-source, making them accessible for anyone to experiment with:</p>
+    <ul>
+        <li><a href="https://github.com/isl-org/MiDaS" target="_blank">MiDaS</a>: AI for depth estimation.</li>
+        <li><a href="https://github.com/colmap/colmap" target="_blank">COLMAP</a>: Photogrammetry and 3D reconstruction from videos or images.</li>
+        <li><a href="https://github.com/alicevision/meshroom" target="_blank">Meshroom</a>: Another tool for 3D reconstruction, user-friendly for beginners.</li>
+        <li><a href="https://opencv.org/" target="_blank">OpenCV</a>: A versatile library for computer vision tasks.</li>
+        <li><a href="https://github.com/nerfstudio-project/nerfstudio" target="_blank">nerfstudio</a>: AI-powered 3D reconstruction using NeRF.</li>
+    </ul>
+
+    <h2>How Does This Apply to Ski Analysis?</h2>
+    <p>Imagine this workflow:</p>
+    <ol>
+        <li><strong>Capture Footage</strong>: Record a skier with a regular camera or phone.</li>
+        <li><strong>Generate 3D Data</strong>:
+            <ul>
+                <li>Upload the video to OpenSki AI’s system.</li>
+                <li>Use depth estimation or SfM to create a 3D model of the skier’s path.</li>
+            </ul>
+        </li>
+        <li><strong>Visualize and Compare</strong>: Analyze the skier's trajectory, speed, and angles using LiDAR-like data. Compare this data to an instructor’s run or previous runs.</li>
+    </ol>
+
+    <h2>Why Use Emulated LiDAR?</h2>
+    <ul>
+        <li><strong>Cost-Effective</strong>: No expensive sensors—just a regular camera.</li>
+        <li><strong>Flexible</strong>: Works with existing footage, making it easy for instructors and skiers to adopt.</li>
+        <li><strong>Scalable</strong>: Open-source tools allow for continuous improvement and customization.</li>
+    </ul>
+
+    <h2>Next Steps</h2>
+    <ol>
+        <li>Set up a basic pipeline using tools like MiDaS or COLMAP to process videos.</li>
+        <li>Experiment with different methods (e.g., depth estimation vs. SfM) to find what works best.</li>
+        <li>any results.</li>
+    </ol>
+
+    <p>
+        Let us know what you think about these methods. If you're interested in contributing or experimenting with these tools, join the discussion on GitHub or create a pull request to improve our project!
+    </p>
+
+    <p><a href="https://github.com/jam2ja/OpenSkiAI" target="_blank">OpenSki AI GitHub Repository</a></p>
+</body>
+</html>
