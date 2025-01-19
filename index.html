@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OpenSkiAI democratizes skiing with real-time AI coaching, inspired by a ski racecourse in Vals, Italy. Created by Jamison Young, this open-source project aims to make skiing accessible and inclusive while preventing innovation barriers. Join us in revolutionizing the sport. Contact: jamisony@gmail.com">
     <title>OpenSkiAI</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
+        html {
+            scroll-padding-top: 90px; /* little higher than the header hight */
+        }
+        
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-color: #000;
+            color: #00ff00;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000; 
+        }
+        .header a {
+            color: #00ff00;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
         body {
             font-family: "Courier New", Courier, monospace;
             background-color: #000;
@@ -50,6 +78,12 @@
 
           /* style for cellphones */
         @media (max-width: 768px) {
+            .header {
+                height: auto; 
+                flex-direction: column;
+                align-items: flex-start; 
+                padding: 10px;
+            }
             body{
                 background-size: 80%; 
                 background-position: center; 
@@ -59,20 +93,39 @@
     </style>
 </head>
 <body>
+    <div class="header">
+        <div class="logo">OpenSkiAi</div>
+        <div class="nav">
+            <a href="#content">About</a>
+            <a href="#explore">Explore Vision</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    
     <h1>Welcome to OpenSkiAI</h1>
-    <h2>Explore Vision</h2>
-    <ul>
-        <li><a href="why-this-idea.html">Why This Idea?</a></li>
-        <li><a href="technologies.html">Technologies</a></li>
-        <li><a href="who-would-use-this-app.html">Who Would Use This App?</a></li>
-        <li><a href="apple-lidar-projects.html">Apple LiDAR Projects</a></li>
-        <li><a href="non-proprietary-lidar.html">Non-Proprietary LiDAR Projects</a></li>
-        <li><a href="kinect-open-eyes.html">Kinect: The Open Eyes of AI</a></li>
-        <li><a href="future-technologies.html">Future Technologies for Ski Racing</a></li>
-        <li><a href="decentralization.html">The Importance of Decentralization</a></li>
-        <li><a href="whos-creating-lidar.html">Who’s Creating LiDAR?</a></li>
-        <li><a href="why-nvidia-not-the-way.html">Why NVIDIA Is Not the Way</a></li>
-    </ul>
+    
+    <section id="content"></section>
+    
+    <section id="explore">
+        <h2>Explore Vision</h2>
+        <ul>
+            <li><a href="why-this-idea.html">Why This Idea?</a></li>
+            <li><a href="technologies.html">Technologies</a></li>
+            <li><a href="who-would-use-this-app.html">Who Would Use This App?</a></li>
+            <li><a href="apple-lidar-projects.html">Apple LiDAR Projects</a></li>
+            <li><a href="non-proprietary-lidar.html">Non-Proprietary LiDAR Projects</a></li>
+            <li><a href="kinect-open-eyes.html">Kinect: The Open Eyes of AI</a></li>
+            <li><a href="future-technologies.html">Future Technologies for Ski Racing</a></li>
+            <li><a href="decentralization.html">The Importance of Decentralization</a></li>
+            <li><a href="whos-creating-lidar.html">Who’s Creating LiDAR?</a></li>
+            <li><a href="why-nvidia-not-the-way.html">Why NVIDIA Is Not the Way</a></li>
+        </ul>
+    </section>
+
+    <section id="explore">
+        
+    </section>
+    
     <footer>
         <p>Visit GitHub: <a href="https://github.com/jam2ja/OpenSkiAI" target="_blank">https://github.com/jam2ja/OpenSkiAI</a></p>
         <p>This page is licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">Creative Commons CC0</a>.</p>
