@@ -29,7 +29,6 @@
             text-decoration: underline;
         }
         body {
-            line-height: 1.6;
             max-width: 800px;
             font-family: "Courier New", Courier, monospace;
             background-color: #000;
@@ -55,7 +54,7 @@
             text-align: center;
         }
         .project-link {
-            text-decoration: none;
+            text-decoration: underline;
             color: #00ff00;
         }
         .project-link:hover {
@@ -68,12 +67,25 @@
         p {
             text-align: left;
         }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+            color: #555;
+        }
+        .license {
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+        .license a{
+            color: #555;
+        }
     </style>
 </head>
 <body>
      <div class="header">
         <div class="logo">
-            <a href="https://openski.xyz" style="font-weight: bold;">OpenSkiAi</a>
+            <a href="https://openski.xyz" style="font-weight: bold;">OpenSkiAI</a>
         </div>
     </div>
     <h1>Non-Proprietary Open-Source LiDAR Projects</h1>
@@ -104,10 +116,10 @@
         <p><strong>Description:</strong> An open-source library developed by Kitware for Simultaneous Localization and Mapping (SLAM) using 3D LiDAR sensors. It is versatile and allows integration into various projects.</p>
         <p><strong>License:</strong> Apache-2.0</p>
         <p><a href="https://www.kitware.com/lidar-slam-spotlight-on-kitwares-open-source-library/" class="project-link" target="_blank">View on Kitware</a></p>
-        
-        <footer>
-            <p>This page is licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">Creative Commons CC0</a>.</p>
-        </footer>
     </div>
+
+    <footer>
+        <p>This page is licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">Creative Commons CC0</a>.</p>
+    </footer>
 </body>
 </html>
