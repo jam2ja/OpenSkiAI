@@ -5,6 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Non-Proprietary Open-Source LiDAR Projects</title>
     <style>
+         .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-color: #000;
+            color: #00ff00;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000; 
+        }
+        .header a {
+            color: #00ff00;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
+        .header .nav {
+            margin-left: auto; 
+            padding-right: 60px; 
+        }
         body {
             line-height: 1.6;
             max-width: 800px;
@@ -42,6 +69,11 @@
     </style>
 </head>
 <body>
+     <div class="header">
+        <div class="nav">
+            <a href="https://openski.xyz/">Home page</a>
+        </div>
+    </div>
     <h1>Non-Proprietary Open-Source LiDAR Projects</h1>
     <div class="container">
         <p>Below is a list of open-source LiDAR projects that utilize non-proprietary hardware and software. These projects focus on accessibility, innovation, and understanding the technology at a fundamental level.</p>
