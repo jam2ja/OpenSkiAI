@@ -5,75 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kinect: The Open Eyes of AI | OpenSkiAI</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            color: #333;
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-color: #000;
+            color: #00ff00;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000; 
         }
-        h1, h2, h3 {
-            color: #0066cc;
+        .header a {
+            color: #00ff00;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
+        body {
+            max-width: 800px;
+            font-family: "Courier New", Courier, monospace;
+            background-color: #000;
+            color: #00ff00;
+            text-align: center;
+            margin: 2rem auto;
+            padding: 20px;
+            line-height: 1.3;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(50, 50, 50, 0.7); /* transparency:0(fully transparent) */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         ul {
             margin-left: 20px;
+        }
+        a {
+            color: #00ff00;
+        }
+        .container p {
+            text-align: left;
+        }
+        .container a {
+            text-decoration: none;
+            color: white;
+        }
+        .container a:hover {
+            text-decoration: underline;
+            color: white;
         }
         footer {
             margin-top: 20px;
             font-size: 0.9em;
             text-align: center;
-            color: #666;
+            color: #555;
+        }
+        footer a{
+            color: #555;
         }
         .resource-link {
-            color: #0066cc;
+            color: white;
             text-decoration: none;
         }
         .resource-link:hover {
             text-decoration: underline;
+            color: white;
         }
     </style>
 </head>
 <body>
+    <div class="header">
+        <div class="logo">
+            <a href="https://openski.xyz" style="font-weight: bold;">OpenSkiAI</a>
+        </div>
+    </div>
     <h1>Kinect: The Open Eyes of AI</h1>
-    <p>Microsoft's Kinect has been a revolutionary tool for 3D sensing, enabling developers and researchers to create innovative applications. Its open-source ecosystem has provided opportunities for experimentation and progress, making it a perfect example of how technology can serve as the "open eyes" of AI.</p>
+    <div class="container">
+        <p>Microsoft's Kinect has been a revolutionary tool for 3D sensing, enabling developers and researchers to create innovative applications. Its open-source ecosystem has provided opportunities for experimentation and progress, making it a perfect example of how technology can serve as the "open eyes" of AI.</p>
+        
+        <h2>How Kinect Works</h2>
+        <p>Kinect uses a structured light approach, projecting an infrared pattern onto the environment and capturing distortions with an IR sensor to generate depth maps. This method enables real-time 3D imaging at an affordable cost, making it accessible to developers and hobbyists.</p>
+        
+        <h2>How Kinect Differs from LiDAR</h2>
+        <p>LiDAR (Light Detection and Ranging) uses laser pulses to measure distances and create precise 3D maps. While LiDAR is highly accurate, it is often expensive and less accessible. Kinect, on the other hand, offers a more affordable alternative, suitable for many applications like sports analysis.</p>
+        
+        <h2>Kinect’s Open-Source Ecosystem</h2>
+        <p>The open-source community has developed numerous libraries and drivers to extend Kinect's functionality:</p>
+        <ul>
+            <li><a href="https://github.com/OpenKinect/libfreenect" class="resource-link" target="_blank">libfreenect</a>: An open-source driver for Kinect sensors on multiple platforms.</li>
+            <li><a href="https://github.com/OpenKinect/libfreenect2" class="resource-link" target="_blank">libfreenect2</a>: A library for Kinect v2, offering enhanced performance and support.</li>
+            <li><a href="https://github.com/OpenKinect/" class="resource-link" target="_blank">OpenKinect Community</a>: A hub for Kinect-related open-source projects.</li>
+        </ul>
     
-    <h2>How Kinect Works</h2>
-    <p>Kinect uses a structured light approach, projecting an infrared pattern onto the environment and capturing distortions with an IR sensor to generate depth maps. This method enables real-time 3D imaging at an affordable cost, making it accessible to developers and hobbyists.</p>
+        <h2>Applications of Kinect</h2>
+        <ul>
+            <li><strong>3D Scanning:</strong> DIY projects for capturing and recreating physical objects.</li>
+            <li><strong>Robotics:</strong> Navigation and environmental mapping for autonomous systems.</li>
+            <li><strong>Sports Analytics:</strong> Analyzing skier movements to improve technique and safety.</li>
+        </ul>
+        
+        <h2>Why Open Eyes in AI Matter</h2>
+        <p>Kinect represents the importance of keeping AI’s “eyes” open and accessible. Here’s why:</p>
+        <ul>
+            <li><strong>Transparency:</strong> Open-source drivers ensure clear understanding of data processes.</li>
+            <li><strong>Innovation:</strong> Accessibility encourages creative applications and experimentation.</li>
+            <li><strong>Preventing Monopolization:</strong> Open tools counter corporate control of technology, fostering equitable access.</li>
+        </ul>
     
-    <h2>How Kinect Differs from LiDAR</h2>
-    <p>LiDAR (Light Detection and Ranging) uses laser pulses to measure distances and create precise 3D maps. While LiDAR is highly accurate, it is often expensive and less accessible. Kinect, on the other hand, offers a more affordable alternative, suitable for many applications like sports analysis.</p>
+        <h2>Discontinuation of Kinect: A Missed Opportunity?</h2>
+        <p>Microsoft discontinued the Kinect hardware, raising concerns about the future of accessible 3D sensing. Some speculate this decision was influenced by corporate interests aiming to limit open access to advanced sensing technologies. However, the open-source community continues to support and develop Kinect-based projects.</p>
+        
+        <h2>Conclusion</h2>
+        <p>Kinect’s legacy as an open-source 3D sensing tool highlights the importance of keeping technology accessible. By advocating for open eyes in AI, we can ensure transparency, encourage innovation, and prevent monopolization. OpenSkiAI builds on this principle, envisioning a future where skiers and developers alike benefit from open technologies.</p>
+    </div>
     
-    <h2>Kinect’s Open-Source Ecosystem</h2>
-    <p>The open-source community has developed numerous libraries and drivers to extend Kinect's functionality:</p>
-    <ul>
-        <li><a href="https://github.com/OpenKinect/libfreenect" class="resource-link" target="_blank">libfreenect</a>: An open-source driver for Kinect sensors on multiple platforms.</li>
-        <li><a href="https://github.com/OpenKinect/libfreenect2" class="resource-link" target="_blank">libfreenect2</a>: A library for Kinect v2, offering enhanced performance and support.</li>
-        <li><a href="https://github.com/OpenKinect/" class="resource-link" target="_blank">OpenKinect Community</a>: A hub for Kinect-related open-source projects.</li>
-    </ul>
-
-    <h2>Applications of Kinect</h2>
-    <ul>
-        <li><strong>3D Scanning:</strong> DIY projects for capturing and recreating physical objects.</li>
-        <li><strong>Robotics:</strong> Navigation and environmental mapping for autonomous systems.</li>
-        <li><strong>Sports Analytics:</strong> Analyzing skier movements to improve technique and safety.</li>
-    </ul>
-    
-    <h2>Why Open Eyes in AI Matter</h2>
-    <p>Kinect represents the importance of keeping AI’s “eyes” open and accessible. Here’s why:</p>
-    <ul>
-        <li><strong>Transparency:</strong> Open-source drivers ensure clear understanding of data processes.</li>
-        <li><strong>Innovation:</strong> Accessibility encourages creative applications and experimentation.</li>
-        <li><strong>Preventing Monopolization:</strong> Open tools counter corporate control of technology, fostering equitable access.</li>
-    </ul>
-
-    <h2>Discontinuation of Kinect: A Missed Opportunity?</h2>
-    <p>Microsoft discontinued the Kinect hardware, raising concerns about the future of accessible 3D sensing. Some speculate this decision was influenced by corporate interests aiming to limit open access to advanced sensing technologies. However, the open-source community continues to support and develop Kinect-based projects.</p>
-    
-    <h2>Conclusion</h2>
-    <p>Kinect’s legacy as an open-source 3D sensing tool highlights the importance of keeping technology accessible. By advocating for open eyes in AI, we can ensure transparency, encourage innovation, and prevent monopolization. OpenSkiAI builds on this principle, envisioning a future where skiers and developers alike benefit from open technologies.</p>
-
     <footer>
         <p>This article is licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">Creative Commons CC0</a>.</p>
     </footer>
