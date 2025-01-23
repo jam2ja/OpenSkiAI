@@ -5,55 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why NVIDIA Is Not the Way</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-color: #000;
+            color: #00ff00;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000; 
         }
+        .header a {
+            color: #00ff00;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
+        body {
+            max-width: 800px;
+            font-family: "Courier New", Courier, monospace;
+            background-color: #000;
+            color: #00ff00;
+            text-align: center;
+            margin: 2rem auto;
+            padding: 20px;
+            line-height: 1.3;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(50, 50, 50, 0.7); /* transparency:0(fully transparent) */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            margin-left: 20px;
+            text-align:left;
+        }
+        a {
+            color: #00ff00;
+        }
+        .container p {
+            text-align: left;
+        }
+        .container a {
+            text-decoration: none;
+            color: white;
+        }
+        .container a:hover {
+            text-decoration: underline;
+            color: white;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            text-align: center;
+            color: #555;
+        }
+        footer a{
+            color: #555;
+        }
+
+        
         img {
             display: block;
             margin: 20px auto;
             max-width: 80%;
             height: auto;
         }
-        h1, h2 {
-            color: #00274d;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #666;
-        }
+
     </style>
 </head>
 <body>
+    <div class="header">
+        <div class="logo">
+            <a href="https://openski.xyz" style="font-weight: bold;">OpenSkiAI</a>
+        </div>
+    </div>
     <h1>Why NVIDIA Is Not the Way</h1>
     <img src="FF701E8E-04C9-4EF9-9D32-87D69CC6B976.png" alt="Surreal NVIDIA Domination Illustration">
-    <p>We don’t want our planet to look like the Death Star—a place dominated by massive energy-intensive AI networks fueled by a single monopolistic company. NVIDIA may have revolutionized the AI space, but at what cost?</p>
-
-    <h2>The Threat of Centralization</h2>
-    <p>NVIDIA dominates AI hardware in a way that’s reminiscent of the Gilded Age when corporations controlled key infrastructure like railways. In many parts of the world, essential infrastructure like railways is publicly owned to ensure fair access. Shouldn’t AI infrastructure follow the same model?</p>
-    <p>As a gaming company, NVIDIA has created powerful tools, but its dominance means we’re building the future of intelligence on the backbone of an entity not built for sustainability or accessibility. Do we really want a gaming company setting the rules for a world-defining technology?</p>
-
-    <h2>The Cost of Intelligence</h2>
-    <p>As AI becomes as ubiquitous as the internet, it will inevitably be seen as a fundamental right. But AI comes with a much higher cost—an environmental one. The energy required to run AI on NVIDIA’s technology is staggering, and unless we develop better, greener solutions, this energy use will spiral out of control. Shouldn’t we ask: How can we create AI that’s energy-efficient and sustainable?</p>
-
-    <h2>A Call for Open, Decentralized AI</h2>
-    <p>We need to challenge the centralization of AI and rethink how this critical technology is developed and deployed. Decentralized systems, open innovation, and a focus on sustainability must be at the forefront. AI infrastructure should be as open and shared as the internet once was—a Wild West of ideas, not a monopoly controlled by a single player.</p>
-
-    <footer>
+    <div class="container">
+        <p>We don’t want our planet to look like the Death Star—a place dominated by massive energy-intensive AI networks fueled by a single monopolistic company. NVIDIA may have revolutionized the AI space, but at what cost?</p>
+    
+        <h2>The Threat of Centralization</h2>
+        <p>NVIDIA dominates AI hardware in a way that’s reminiscent of the Gilded Age when corporations controlled key infrastructure like railways. In many parts of the world, essential infrastructure like railways is publicly owned to ensure fair access. Shouldn’t AI infrastructure follow the same model?</p>
+        <p>As a gaming company, NVIDIA has created powerful tools, but its dominance means we’re building the future of intelligence on the backbone of an entity not built for sustainability or accessibility. Do we really want a gaming company setting the rules for a world-defining technology?</p>
+    
+        <h2>The Cost of Intelligence</h2>
+        <p>As AI becomes as ubiquitous as the internet, it will inevitably be seen as a fundamental right. But AI comes with a much higher cost—an environmental one. The energy required to run AI on NVIDIA’s technology is staggering, and unless we develop better, greener solutions, this energy use will spiral out of control. Shouldn’t we ask: How can we create AI that’s energy-efficient and sustainable?</p>
+    
+        <h2>A Call for Open, Decentralized AI</h2>
+        <p>We need to challenge the centralization of AI and rethink how this critical technology is developed and deployed. Decentralized systems, open innovation, and a focus on sustainability must be at the forefront. AI infrastructure should be as open and shared as the internet once was—a Wild West of ideas, not a monopoly controlled by a single player.</p>
         <p>Visit our GitHub: <a href="https://github.com/jam2ja/OpenSkiAI" target="_blank">https://github.com/jam2ja/OpenSkiAI</a></p>
+    </div>
+        
+    <footer>
+        
         <p>This page is licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">Creative Commons CC0</a>.</p>
     </footer>
 </body>
