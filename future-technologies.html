@@ -5,26 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Future Technologies for Ski Racing | OpenSkiAI</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            color: #333;
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            background-color: #000;
+            color: #00ff00;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000; 
         }
-        h1, h2, h3 {
-            color: #0066cc;
+        .header a {
+            color: #00ff00;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
+        body {
+            max-width: 800px;
+            font-family: "Courier New", Courier, monospace;
+            background-color: #000;
+            color: #00ff00;
+            text-align: center;
+            margin: 2rem auto;
+            padding: 20px;
+            line-height: 1.3;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: rgba(50, 50, 50, 0.7); /* transparency:0(fully transparent) */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         ul {
             margin-left: 20px;
+        }
+        a {
+            color: #00ff00;
+        }
+        .container p {
+            text-align: left;
+        }
+        .container a {
+            text-decoration: none;
+            color: white;
+        }
+        .container a:hover {
+            text-decoration: underline;
+            color: white;
         }
         footer {
             margin-top: 20px;
             font-size: 0.9em;
             text-align: center;
-            color: #666;
+            color: #555;
+        }
+        footer a{
+            color: #555;
         }
     </style>
 </head>
