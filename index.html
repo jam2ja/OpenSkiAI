@@ -119,6 +119,20 @@
         footer a{
             color: #555;
         }
+        audio {
+            margin-left: 20px;  /* 與其他元素的間距 */
+            width: 200px;  /* 播放器寬度 */
+            height: 40px;  /* 播放器高度 */
+        }
+        audio::-webkit-media-controls-panel {
+            background-color: #00ff00;  /* 背景色 */
+            border-radius: 5px;  /* 圓角 */
+        }
+        
+        audio::-webkit-media-controls-play-button,
+        audio::-webkit-media-controls-mute-button {
+            filter: invert(1);  /* 反轉按鈕顏色 */
+        }
 
           /* style for cellphones */
         @media (max-width: 768px) {
@@ -162,7 +176,10 @@
     </div>
     
     <h1>Welcome to OpenSkiAI</h1>
-    
+    <audio controls>
+        <source src="file.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
     <div class="container">
         <section id="about">
             <h2>Why This Idea?</h2>
