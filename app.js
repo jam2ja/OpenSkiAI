@@ -29,7 +29,9 @@ const wavesurfer = WaveSurfer.create({
   });
 
 // 加載音頻文件
-wavesurfer.load('file.mp3');  // 替換為你的音頻文件路徑
+wavesurfer.load('https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3');
+
+//wavesurfer.load('file.mp3'); 
 
 // 播放/暫停按鈕
 const playButton = document.getElementById('play-button');
